@@ -47,7 +47,7 @@ Then add the package name to `dsh.profile.bundles` and restart.
 
 ## Compatibility
 
-Developed and used against **DSH 0.2.1-rc.3** (macOS desktop profile). The row structure it relies on is that version's `SessionRow`: the third child is the time cell, and the row carries `data-row-key="session:<id>"`. It also works on 0.2.0-rc.2.
+Developed and used against **DSH 0.2.1-rc.3** (macOS desktop profile). The row structure was checked against that version's `SessionRow`: the third child is the time cell, and the row carries `data-row-key="session:<id>"`. Earlier versions were not checked one by one; per the failure mode above, a structural mismatch only falls back to relative times.
 
 ## Development
 

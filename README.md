@@ -47,7 +47,7 @@ pnpm add /path/to/dsh-plugin-session-clock
 
 ## 兼容性
 
-开发与使用环境：**DSH 0.2.1-rc.3**（macOS desktop profile）。行结构依据该版本的 `SessionRow`：第三列是时间单元格，行上带 `data-row-key="session:<id>"`。更早的 0.2.0-rc.2 上同样可用。
+开发与使用环境：**DSH 0.2.1-rc.3**（macOS desktop profile）。行结构按该版本的 `SessionRow` 核对：第三个子元素是时间单元格，行上带 `data-row-key="session:<id>"`。更早版本未逐一核对——按上面的失效表现，结构不符时只会退回相对时间。
 
 ## 开发
 
