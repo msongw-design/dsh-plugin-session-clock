@@ -1,0 +1,42 @@
+{
+  "name": "dsh-plugin-session-clock",
+  "version": "0.1.0",
+  "description": "Rewrite the sidebar's relative session times as WeChat-style absolute times",
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "session-list"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msongw-design/dsh-plugin-session-clock.git"
+  },
+  "homepage": "https://github.com/msongw-design/dsh-plugin-session-clock#readme",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4"
+  }
+}

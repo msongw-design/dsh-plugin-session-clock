@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session clock",
+    "description": "Rewrites the sidebar's relative session times (1d, 3h) as absolute times."
+  }
+}

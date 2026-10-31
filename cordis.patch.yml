@@ -1,0 +1,9 @@
+# The session-clock bundle: one browser row that rewrites the sidebar's
+# relative session times ("3小时", "1天") into absolute ones.
+#
+# The row names this package itself, so `dsh.client` in package.json supplies
+# the browser half (lib/client.js) and lib/index.js is the empty node half.
+
+- insert:
+    - id: ui-session-clock
+      name: 'dsh-plugin-session-clock'
